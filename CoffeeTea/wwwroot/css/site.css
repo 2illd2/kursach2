@@ -1,0 +1,331 @@
+﻿/* wwwroot/css/site.css */
+:root {
+    /* Основные цвета кофе */
+    --coffee-dark: #8B4513;
+    --coffee-medium: #A0522D;
+    --coffee-light: #D2691E;
+    --chocolate: #5D4037;
+    /* Цвета чая */
+    --tea-green: #4CAF50;
+    --tea-dark-green: #388E3C;
+    --tea-light-green: #8BC34A;
+    /* Нейтральные цвета */
+    --cream: #FFF8E1;
+    --beige: #F5F5DC;
+    --almond: #FFEBCD;
+    --wheat: #F5DEB3;
+    /* Акцентные цвета */
+    --caramel: #D2691E;
+    --gold: #FFD700;
+    --citrus: #FFA726;
+    /* Фон и текст */
+    --bg-light: #FFF8E1;
+    --bg-cream: #FCF5E6;
+    --text-dark: #5D4037;
+    --text-medium: #795548;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    padding-top: 80px;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+}
+
+/* Цветовые классы */
+.text-coffee {
+    color: var(--coffee-dark) !important;
+}
+
+.text-tea {
+    color: var(--tea-dark-green) !important;
+}
+
+.text-dark-brown {
+    color: var(--chocolate) !important;
+}
+
+.bg-light-cream {
+    background-color: var(--cream) !important;
+}
+
+.bg-tea-light {
+    background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+/* Градиенты */
+.bg-gradient-coffee {
+    background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 50%, var(--coffee-light) 100%) !important;
+}
+
+.bg-gradient-tea {
+    background: linear-gradient(135deg, var(--tea-dark-green) 0%, var(--tea-green) 50%, var(--tea-light-green) 100%) !important;
+}
+
+.bg-gradient-brown {
+    background: linear-gradient(135deg, var(--coffee-dark), var(--coffee-medium)) !important;
+}
+
+/* Текстовые градиенты */
+.text-gradient-coffee {
+    background: linear-gradient(135deg, var(--coffee-dark), var(--coffee-medium));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-gradient-tea {
+    background: linear-gradient(135deg, var(--tea-dark-green), var(--tea-green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Дополнительные радиусы */
+.rounded-4 {
+    border-radius: 1.5rem !important;
+}
+
+.rounded-5 {
+    border-radius: 2rem !important;
+}
+
+/* Навигация */
+.navbar {
+    padding: 1rem 0;
+    box-shadow: 0 2px 20px rgba(139, 69, 19, 0.08);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 248, 225, 0.95) !important;
+    border-bottom: 2px solid var(--coffee-medium);
+}
+
+.nav-link {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    font-weight: 500;
+    color: var(--text-dark) !important;
+}
+
+    .nav-link:hover {
+        background: linear-gradient(135deg, var(--coffee-dark), var(--coffee-medium));
+        color: white !important;
+        transform: translateY(-2px);
+    }
+
+/* Кнопки */
+.btn-outline-coffee {
+    border: 2px solid var(--coffee-dark);
+    color: var(--coffee-dark);
+    transition: all 0.3s ease;
+}
+
+    .btn-outline-coffee:hover {
+        background: var(--coffee-dark);
+        border-color: var(--coffee-dark);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+    }
+
+.btn-outline-tea {
+    border: 2px solid var(--tea-dark-green);
+    color: var(--tea-dark-green);
+    transition: all 0.3s ease;
+}
+
+    .btn-outline-tea:hover {
+        background: var(--tea-dark-green);
+        border-color: var(--tea-dark-green);
+        color: white !important;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(56, 142, 60, 0.3);
+    }
+
+.btn-coffee {
+    background: linear-gradient(135deg, var(--coffee-dark), var(--coffee-medium));
+    border: none;
+    transition: all 0.3s ease;
+}
+
+    .btn-coffee:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(139, 69, 19, 0.4);
+        background: linear-gradient(135deg, var(--coffee-medium), var(--coffee-dark));
+    }
+
+.btn-tea {
+    background: linear-gradient(135deg, var(--tea-dark-green), var(--tea-green));
+    border: none;
+    transition: all 0.3s ease;
+}
+
+    .btn-tea:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(56, 142, 60, 0.4);
+        background: linear-gradient(135deg, var(--tea-green), var(--tea-dark-green));
+    }
+
+/* Карточки */
+.shadow-hover {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(139, 69, 19, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--wheat);
+    background: white;
+}
+
+    .shadow-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.shadow-hover:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+/* Бейджи */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+    .badge.bg-coffee {
+        background: linear-gradient(135deg, var(--coffee-medium), var(--coffee-light)) !important;
+        color: white !important;
+    }
+
+    .badge.bg-tea {
+        background: linear-gradient(135deg, var(--tea-green), var(--tea-light-green)) !important;
+        color: white !important;
+    }
+
+    .badge.bg-gold {
+        background: linear-gradient(135deg, #FFD700, #FFA500) !important;
+        color: var(--chocolate) !important;
+    }
+
+/* Hero секция */
+.hero-section {
+    margin-top: 2rem;
+    box-shadow: 0 20px 40px rgba(139, 69, 19, 0.15);
+    background: linear-gradient(135deg, var(--coffee-dark) 0%, var(--coffee-medium) 100%);
+}
+
+.hero-image-placeholder {
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Специальные классы для товаров */
+.coffee-card {
+    border-left: 4px solid var(--coffee-medium);
+}
+
+.tea-card {
+    border-left: 4px solid var(--tea-green);
+}
+
+/* Утилиты */
+.fw-semibold {
+    font-weight: 600 !important;
+}
+
+.text-caramel {
+    color: var(--caramel) !important;
+}
+
+.bg-citrus {
+    background-color: rgba(255, 167, 38, 0.1) !important;
+}
+
+/* Анимации */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse:hover {
+    animation: pulse 2s infinite;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 2rem !important;
+    }
+
+    .display-4 {
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Декоративные элементы */
+.coffee-bean {
+    color: var(--coffee-medium);
+    display: inline-block;
+}
+
+.tea-leaf {
+    color: var(--tea-green);
+    display: inline-block;
+}
+
+/* Иконки */
+.icon-coffee::before {
+    content: "☕";
+    margin-right: 0.5rem;
+}
+
+.icon-tea::before {
+    content: "🍵";
+    margin-right: 0.5rem;
+}

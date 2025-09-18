@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/CoffeeTea/css/site.8596nbhxaj.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8596nbhxaj"},{"Name":"integrity","Value":"sha256-zEYTMXmSMWMWCUP9yxQTHvGfyPt\u002B/spIXLshWhkhhLg="},{"Name":"label","Value":"_content/CoffeeTea/css/site.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7696"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zEYTMXmSMWMWCUP9yxQTHvGfyPt\u002B/spIXLshWhkhhLg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 10:34:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/CoffeeTea/css/site.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-zEYTMXmSMWMWCUP9yxQTHvGfyPt\u002B/spIXLshWhkhhLg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7696"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022zEYTMXmSMWMWCUP9yxQTHvGfyPt\u002B/spIXLshWhkhhLg=\u0022"},{"Name":"Last-Modified","Value":"Thu, 18 Sep 2025 10:34:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>
